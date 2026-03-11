@@ -1,0 +1,9 @@
+python-telegram-bot==21.10
+rembg==2.0.59
+onnxruntime==1.15.1
+Pillow==10.4.0
+opencv-python-headless
+numpy==1.26.4
+fastapi
+uvicorn
+python-multipart
