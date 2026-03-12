@@ -1,7 +1,12 @@
 import sqlite3
 import os
 
-DB_NAME = "shop.db"
+# On Vercel (serverless), the filesystem is read-only except /tmp/
+# Use /tmp/ for the database when VERCEL environment variable is set
+if os.environ.get("VERCEL"):
+    DB_NAME = "/tmp/shop.db"
+else:
+    DB_NAME = "shop.db"
 
 def get_connection():
     return sqlite3.connect(DB_NAME)

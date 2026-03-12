@@ -25,8 +25,7 @@ tg_app = None
 async def get_tg_app():
     global tg_app
     if tg_app is None:
-        if not os.path.exists(database.DB_NAME):
-            database.init_db()
+        database.init_db()
             
         tg_app = ApplicationBuilder().token(BOT_TOKEN).build()
         

@@ -13,3 +13,4 @@ PortableGit.exe
 *.egg-info/
 dist/
 build/
+upload_to_github.py
