@@ -1,0 +1,11 @@
+.git
+.gitignore
+.vercel
+PortableGit*
+__pycache__
+*.pyc
+venv
+env
+shop.db
+start_bot.bat
+upload_to_github.py
