@@ -6,7 +6,7 @@ def get_main_menu_keyboard(is_admin=False):
     keyboard = [
         [KeyboardButton(texts.BTN_PRODUCTS), KeyboardButton(texts.BTN_HARID)],
         [KeyboardButton(texts.BTN_SOCIALS), KeyboardButton(texts.BTN_CONTACT)],
-        [KeyboardButton(texts.BTN_ABOUT), KeyboardButton(texts.BTN_SUPPORT)]
+        [KeyboardButton(texts.BTN_SUPPORT)]
     ]
     if is_admin:
         # Give admins access to an admin panel

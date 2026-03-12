@@ -35,8 +35,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(texts.SOCIALS_TEXT, reply_markup=keyboards.get_socials_keyboard())
     elif text == texts.BTN_CONTACT:
         await update.message.reply_text(texts.CONTACT_TEXT)
-    elif text == texts.BTN_ABOUT:
-        await update.message.reply_text(texts.ABOUT_TEXT)
     elif text == texts.BTN_HARID:
         await update.message.reply_text(texts.HARID_TEXT, reply_markup=keyboards.get_harid_keyboard())
     elif text == texts.BTN_MAIN_MENU:

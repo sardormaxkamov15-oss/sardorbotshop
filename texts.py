@@ -8,7 +8,6 @@ SOCIALS_TEXT = "Bizning ijtimoiy tarmoqlarimizga obuna bo'ling:"
 SUPPORT_TEXT = "Texnik yordam va savollar bo'yicha bizning xodimimizga murojaat qiling:\n\n✉️ Telegram: @darkleetter"
 BTN_HARID = "🔥 HARID"
 BTN_CONTACT = "📞 Aloqa"
-BTN_ABOUT = "ℹ️ Biz haqimizda"
 
 CATEGORIES_TEXT = "Kategoriyalardan birini tanlang:"
 
@@ -51,7 +50,6 @@ NO_ORDERS = "Sizda hozircha buyurtmalar yo'q."
 
 HARID_TEXT = "HARID:"
 CONTACT_TEXT = "Aloqa uchun:\n\n📞 Telefon: +998908332623\n✉️ Telegram: @Nurbek_halimjonov"
-ABOUT_TEXT = "GYM FOOD\nSog'lom ovqatlanish va sport uchun maxsus mahsulotlar do'koni. Bu yerda proteinlar, sport uchun qo'shimchalar, tabiiy va foydali taomlar mavjud. Har bir mahsulot sizning kuchingiz va energiyangizni oshirishga yordam beradi."
 
 # Admin Panel Texts
 ADMIN_MENU = "Admin paneliga xush kelibsiz!"
