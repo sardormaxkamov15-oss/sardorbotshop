@@ -5,7 +5,11 @@ import database
 import texts
 import keyboards
 import states
-import sticker_utils
+try:
+    import sticker_utils
+    STICKER_AVAILABLE = True
+except ImportError:
+    STICKER_AVAILABLE = False
 from config import ADMIN_IDS
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -233,6 +237,9 @@ async def cancel_checkout(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handles photos sent by the user and converts them to stickers."""
+    if not STICKER_AVAILABLE:
+        await update.message.reply_text("Stiker funksiyasi hozirda mavjud emas.")
+        return
     try:
         # Get the largest photo
         file_id = update.message.photo[-1].file_id
@@ -257,6 +264,9 @@ async def handle_photo(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Handles documents sent by the user and converts them to stickers if they are images."""
+    if not STICKER_AVAILABLE:
+        await update.message.reply_text("Stiker funksiyasi hozirda mavjud emas.")
+        return
     if not update.message.document.mime_type.startswith('image/'):
         return
         
